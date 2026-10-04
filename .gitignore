@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local provider data and confidential material
+data/
+docs/project-spec.md
+AIE2609_Project.pdf
+.atl/
+
+# Local execution artifacts
+.cache/
+logs/
+output/*
+!output/.gitkeep
+
+# Operating system
+.DS_Store
+Thumbs.db
