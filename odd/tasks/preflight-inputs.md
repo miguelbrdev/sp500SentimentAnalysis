@@ -82,11 +82,12 @@ Authority: the private local specification, the confirmed policies in the root p
 - Branch: `feat/preflight-inputs`, based on `578263d`. Documentation and IMP-01 are committed as `6b67b0a` and `333a6b0`.
 - Strategy: `ask-on-risk`; the initial 500–800 authored-line forecast was advisory, not a cap. The user has asked for two local commits; no push or remote is configured.
 - Work-unit commits: `6b67b0a chore: use scoped GGA reviewer`; `333a6b0 feat: add strict input preflight`. The feature commit's normal GGA hook returned `STATUS: PASSED`.
+- Commit evidence: `6b67b0a` contains only `.gga` plus the bounded project reviewer; its normal hook found no staged Python files and made no AI request. `333a6b0` contains documentation, preflight, synthetic tests and task records; GGA selected `gga-reviewer` (`gpt-6-luna`) and returned `STATUS: PASSED`. The focused suite most recently passed all 31 tests in 0.074 seconds (exit 0) before the documentation-only closeout update.
 - Native documentation review is postponed, not approved. Its prior consent offer belongs to the old documentation target and must not be reused for changed source. Review mode remains globally on; no preference is changed.
-- Engram recovery mirror: `odd/preflight-inputs/tasks`; parent synchronizes and reads back mirror #96 before the task-record closeout commit.
+- Engram recovery mirror: `odd/preflight-inputs/tasks`; full task synchronized and read back before the delivery-evidence update.
 
 ## Evidence and next step
 
 The initial ten-file staged snapshot was cleared before committing to prevent the obsolete numeric implementation from entering history. The scoped GGA profile was committed first; then the corrected documentation, preflight, regression tests and task records were committed together. The feature commit's ordinary hook selected `gga-reviewer` and passed strict status parsing. Real-IANA readiness remains unverified, native review remains postponed/not approved, and no original input, exercise credential or dependency installation was used.
 
-IMP-01 is committed. Future IMP-02 work requires separate authorization. The user handles any push.
+IMP-01 is committed. This final documentation-only record closes task tracking, not a new application behavior. Future IMP-02 work requires separate authorization. The user handles any push.
