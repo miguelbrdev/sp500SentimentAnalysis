@@ -4,6 +4,8 @@
 
 IMP-01 provides strict input preflight in `news_sentiment/input.py`, with 31 passing standard-library tests using synthetic files. Fractional/exponent JSON numbers are parsed as `Decimal` and compared exactly in full-record duplicate checks, so overflow, underflow, and binary-float rounding cannot conceal conflicting extras. A number outside the standard library's decimal exponent range fails closed as invalid JSON; integer tokens and typed ID rules are unchanged. Decimal-valued extras remain in memory only, so any future progress/fingerprint serialization must encode them losslessly.
 
+The current project work is available at [miguelbrdev/sp500SentimentAnalysis](https://github.com/miguelbrdev/sp500SentimentAnalysis), branch `feat/preflight-inputs`.
+
 The repository is not a runnable end-to-end pipeline: classification, progress/replay, scoring, CSV publication, and the CLI remain unimplemented. Original inputs were not inspected or run; no model call, paid API use, dependency installation, generated output, or real-data validation is claimed. Production readiness for the real New York IANA timezone data remains pending.
 
 Project GGA selects the tool-denied, review-only `.opencode/agents/gga-reviewer.md` profile through `.gga`. It uses the active OpenCode model/account without changing the global default or credentials; GGA's provider, strict mode, and timeout remain `opencode`, `true`, and `300`. Restart OpenCode to load agent-file changes in an existing session. Offline mock tests verified `--agent gga-reviewer` forwarding and strict status handling only; no real AI review or approval is claimed.

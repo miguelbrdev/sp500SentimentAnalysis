@@ -44,7 +44,7 @@ Documentation-only work has no meaningful runnable behavioral RED or configured 
 - Documentation was prepared on `docs/project-documentation`; the user-facing work continues on `feat/preflight-inputs` from branch point `578263d`.
 - Delivery strategy: `ask-on-risk`; no PR or chain strategy is selected or authorized.
 - Forecast: approximately 450–650 authored changed lines for the coherent documentation package and planning record; advisory, not a cap. Keep formatting and essential content rather than compressing to meet a line count.
-- Reviewable commits: `6b67b0a chore: use scoped GGA reviewer` and `333a6b0 feat: add strict input preflight` with tests and project documentation. The user owns any push.
+- Reviewable commits: `6b67b0a chore: use scoped GGA reviewer` and `333a6b0 feat: add strict input preflight` with tests and project documentation. Task-record closeouts are `a64aa12` and `55d784f`; the branch is published as `origin/feat/preflight-inputs`.
 - Review mode observed: on, decided by global preference. The initial assessment was unassessable without an untracked declaration. A subsequent assessment explicitly selecting the four root documents and this task returned `medium`, six paths and 466 changed lines before this final progress note; its reason was the operational `AGENTS.md` change and its review-due reason was `slice_budget_reached`. Native completion remains blocked, not approved.
 - No runtime or delivery receipt is implied by a checklist.
 
@@ -67,4 +67,4 @@ Documentation-only work has no meaningful runnable behavioral RED or configured 
 
 ## Next step
 
-Documentation planning and technical verification are complete; native review remains postponed/not approved. Both local commits are recorded above; the feature commit includes corrected preflight code, regression tests and documentation. Leave push/remote delivery to the user. Full application work, dependency installation and paid execution remain separate authorization gates.
+Documentation planning and technical verification are complete; native review remains postponed/not approved. Both work-unit commits are recorded above and `feat/preflight-inputs` is published. No PR or merge to `main` has been made. Full application work, dependency installation and paid execution remain separate authorization gates.
