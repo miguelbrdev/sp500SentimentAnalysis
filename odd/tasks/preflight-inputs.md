@@ -79,14 +79,14 @@ Authority: the private local specification, the confirmed policies in the root p
 
 ## Delivery and progress
 
-- Branch: `feat/preflight-inputs`, created from the current documentation worktree; HEAD remains `578263d`. Existing uncommitted documentation is retained, not staged or discarded.
+- Branch: `feat/preflight-inputs`, based on `578263d`. Documentation and IMP-01 are committed as `6b67b0a` and `333a6b0`.
 - Strategy: `ask-on-risk`; the initial 500–800 authored-line forecast was advisory, not a cap. The user has asked for two local commits; no push or remote is configured.
-- Work-unit commits: `6b67b0a chore: use scoped GGA reviewer` is recorded. `feat: add strict input preflight` remains pending normal hook and commit.
+- Work-unit commits: `6b67b0a chore: use scoped GGA reviewer`; `333a6b0 feat: add strict input preflight`. The feature commit's normal GGA hook returned `STATUS: PASSED`.
 - Native documentation review is postponed, not approved. Its prior consent offer belongs to the old documentation target and must not be reused for changed source. Review mode remains globally on; no preference is changed.
-- Engram recovery mirror: `odd/preflight-inputs/tasks`; parent-owned synchronization remains pending. Existing mirror #96 is stale and is not authoritative for the final verification evidence.
+- Engram recovery mirror: `odd/preflight-inputs/tasks`; parent synchronizes and reads back mirror #96 before the task-record closeout commit.
 
 ## Evidence and next step
 
-The initial implementation passed 27 synthetic tests, but a later GGA review and parent reproduction confirmed numeric-loss duplicate conflicts. The current numeric correction and GGA profile/mock checks are recorded above. INPUT-02 technical verification passed; native review remains postponed. The local GGA-profile commit `6b67b0a` is complete. The original ten-file staged snapshot was explicitly cleared without changing worktree contents; the corrected documentation, code, tests and task records are now unstaged for the feature commit. The earlier live hook timed out once; a later user-run hook returned a real finding but GGA reported the orchestrator's verbose output as ambiguous. No original input, exercise credential or dependency installation is part of this correction.
+The initial ten-file staged snapshot was cleared before committing to prevent the obsolete numeric implementation from entering history. The scoped GGA profile was committed first; then the corrected documentation, preflight, regression tests and task records were committed together. The feature commit's ordinary hook selected `gga-reviewer` and passed strict status parsing. Real-IANA readiness remains unverified, native review remains postponed/not approved, and no original input, exercise credential or dependency installation was used.
 
-Next step: stage and inspect the corrected documentation, preflight, tests and task records for `feat: add strict input preflight`. Run the normal hook without bypass or weakened strict checking. The user handles any push.
+IMP-01 is committed. Future IMP-02 work requires separate authorization. The user handles any push.
